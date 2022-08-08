@@ -4,11 +4,11 @@
     {% if request.user.is_authenticated %}
     <h2>Active Listings</h2>
 
-        <!-- <ul>
+        <ul>
             {% for listing in listings %}
                 <li>{{ listing.item }}: being sold for ${{ listing.price }} by {{ listing.owner.username }}</li>
             {% endfor %}
-        </ul> -->
+        </ul> 
 
         {% for listing in listings %}
             {% if not listing.closed %}
